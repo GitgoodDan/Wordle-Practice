@@ -58,7 +58,7 @@ function getGuess(randomIndex) {
                         isPartiallyCorrect = true;
                     }
                 });
-                cell.style.backgroundColor = isPartiallyCorrect ? "orange" : "red";
+                cell.style.backgroundColor = isPartiallyCorrect ? 'orange' : 'red';
             } else {
                 cell.style.backgroundColor = correct ? "green" : "red";
             }
