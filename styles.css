@@ -73,15 +73,19 @@ h1{
 
 .cell {
     font-family: eightBit;
+    font-size: smaller;
     color: white;
     border: solid white 1px;
     background-color: gray;
-    width: 100px;
+    width: 150px;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: auto;
 }
+
+
 
 
 
