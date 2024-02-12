@@ -9,7 +9,6 @@ import characterList from "./assets/character.js";
 
 let guess = "";
 let character = getRandomCharacterName();
-let attempts = 0;
 
 function getRandomCharacterName() {
     const characterNames = characterList.map(character => character.name);
