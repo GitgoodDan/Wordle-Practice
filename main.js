@@ -39,7 +39,7 @@ function getGuess(randomIndex) {
 
     const guessedCharacter = characterList.find(character => character.name.toLowerCase() === guess);
 
-    const currentRow = document.querySelector(`.row[data-num="${currentRowIndex}"]`);
+    const currentRow = document.querySelector(`.row[data-num="${currentRowIndex + 1}"]`);
 
     if (!currentRow) {
         document.querySelector("h1").textContent = "You've exceeded the attempt limit. You lose!";
@@ -48,7 +48,7 @@ function getGuess(randomIndex) {
 
     if (guessedCharacter) {
         Object.entries(guessedCharacter).forEach(([key, value], index) => {
-            const cell = currentRow.querySelector(`.cell[data-index="${index}"]`);
+            const cell = currentRow.querySelector(`.cell[data-index="${index + 1}"]`);
             const correct = guessedCharacter[key] === characterList[randomIndex][key];
             if (Array.isArray(guessedCharacter[key])) {
                 let isPartiallyCorrect = false;
